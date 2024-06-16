@@ -103,16 +103,7 @@ const Ingame = () => {
         </>
       ) : (
         <div className="flex flex-col items-center m-auto mt-24">
-          <div className=" mb-20">
-            <Image
-              src="/images/common/battlelayer_title.png"
-              alt="battlelayer_title"
-              width={480}
-              height={0}
-              className="w-full h-auto"
-              priority={true}
-            />
-          </div>
+          <div className=" mb-20"></div>
           <ConnectWallet />
         </div>
       )}
