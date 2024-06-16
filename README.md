@@ -2,7 +2,7 @@
 
 HybridAutoBattle combines Onchain and Offchain for both security and better UX, appealing to the mass.
 
-![logo](https://github.com/yamapyblack/HybridAutoBattle/blob/main/frontend/public/HybridAutoBattle.png?raw=true)
+![logo](https://github.com/yamapyblack/HybridAutoBattleManta/blob/main/frontend/public/HybridAutoBattle-logo.png?raw=true)
 
 ## Demo
 
@@ -20,7 +20,7 @@ Blockchain technology allows humanity to own digital data for the first time, as
 
 **Offchain Game vs Onchain Game**
 
-![logo](https://github.com/yamapyblack/HybridAutoBattle/blob/main/frontend/public/onchainOrOffchain.jpeg?raw=true)
+![logo](https://github.com/yamapyblack/HybridAutoBattleManta/blob/main/frontend/public/images/lp/onchainOrOffchain.jpeg?raw=true)
 
 Let's examine the current mainstream of blockchain games, Offchain games. "Do users truly own these assets?" Even if they do, can these assets be freely issued or devalued by the admin's authority?
 
@@ -28,7 +28,7 @@ This is akin to the issues between CeFi and DeFi. In response, we developed a de
 
 **What is the Hybrid Game**
 
-![logo](https://github.com/yamapyblack/HybridAutoBattle/blob/main/frontend/public/hybrid.jpeg?raw=true)
+![logo](https://github.com/yamapyblack/HybridAutoBattleManta/blob/main/frontend/public/images/lp/hybrid.jpeg?raw=true)
 
 We propose a "HybridGame", maintaining asset ownership (Self-custody) while running the game Offchain to enhance UX.
 
@@ -38,7 +38,7 @@ With "PlasmaEngine," we can offer scalable games while ensuring asset ownership.
 
 **The Detail of PlasmaEngine**
 
-![logo](https://github.com/yamapyblack/HybridAutoBattle/blob/main/frontend/public/PlasmaBattle-architecutre.png?raw=true)
+![logo](https://github.com/yamapyblack/HybridAutoBattleManta/blob/main/frontend/public/images/lp/PlasmaBattle-architecutre.png?raw=true)
 
 This engine is primarily designed for auto-progress strategy battle games (not applicable to all game genres).
 
@@ -67,7 +67,7 @@ Finally, it would be ideal if users could claim tokens based on Onchain battle r
 ## Contract Deployment
 
 ```
-cd zksync
+cd onchain
 ```
 
 Enviroment
@@ -75,26 +75,26 @@ Enviroment
 .env (This is admin signer address)
 
 ```
-WALLET_PRIVATE_KEY=0x...
+PRIVATE_KEY=0x...
 ```
 
 Install
 
 ```
-npm install
+forge install
 ```
 
 Deploy
 
 ```
-npx hardhat run deploy/deploy.ts --network zkSyncSepoliaTestnet
+forge script script/PlasmaBattleAlpha.s.sol --broadcast --fork-url https://pacific-rpc.sepolia-testnet.manta.network/http
 ```
 
-## Contract addresses(zkSync sepolia)
+## Contract addresses(Manta sepolia)
 
 BattleContract
 
-[0x3979d863D02Ce04fc5B8932537b9f69c402B2911](https://sepolia.explorer.zksync.io/address/0x3979d863D02Ce04fc5B8932537b9f69c402B2911)
+[0x15EBaAD8717A6B71116ffAF1E0FD4A3b4DE0F96C](https://pacific-explorer.sepolia-testnet.manta.network/address/0x15EBaAD8717A6B71116ffAF1E0FD4A3b4DE0F96C)
 
 ## Frontend
 
