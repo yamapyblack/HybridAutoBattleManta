@@ -2,6 +2,8 @@
 
 HybridAutoBattle combines Onchain and Offchain for both security and better UX, appealing to the mass.
 
+![logo](https://github.com/yamapyblack/HybridAutoBattleManta/blob/main/frontend/public/HybridAutoBattle.png?raw=true)
+
 ## Demo
 
 [https://hybrid-auto-battle-manta.vercel.app/](https://hybrid-auto-battle-manta.vercel.app/)
